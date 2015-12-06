@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="12dp"
+    android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/config_text"
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:layout_margin="12dp"
+        android:text="12:34" 
+        android:textSize="48sp"
+        android:textColor="#AAAAAA"
+        android:background="@drawable/appwidget_drawable" />
+    
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="6dp"
+       android:layout_marginBottom="6dp"
+       android:layout_marginRight="4dp"
+       android:layout_marginLeft="4dp"       
+       android:orientation="horizontal"
+       android:background="#BB0832B2" >
+       <Button 
+           android:id="@+id/color01"
+           android:background="#AAAAAA"
+           android:onClick="clickColor"
+           style="@style/colors_style" />
+       <Button 
+           android:id="@+id/color02"
+           android:background="#C7BB18"
+           android:onClick="clickColor"
+           style="@style/colors_style" />
+       <Button 
+           android:id="@+id/color03"
+           android:background="#0AB04D"
+           android:onClick="clickColor"
+           style="@style/colors_style" />
+       <Button 
+           android:id="@+id/color04"
+           android:background="#B0008D"
+           android:onClick="clickColor"
+           style="@style/colors_style" />
+       <Button 
+           android:id="@+id/color05"
+           android:background="#C76200"
+           android:onClick="clickColor"
+           style="@style/colors_style" />
+    </LinearLayout>
+    
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="6dp"
+       android:layout_marginBottom="6dp"
+       android:layout_marginRight="4dp"
+       android:layout_marginLeft="4dp"
+       android:orientation="horizontal"
+       android:background="#BB111111" >
+       
+       <Button 
+           android:id="@+id/stroke01"
+           android:onClick="clickStroke"
+           android:background="@drawable/appwidget_drawable"
+           style="@style/colors_style" />
+       <Button 
+           android:id="@+id/stroke02"
+           android:onClick="clickStroke"
+           android:background="@drawable/appwidget_drawable_stroke"
+           style="@style/colors_style" />
+       
+   </LinearLayout>
+
+   <Button       
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="6dp"
+       android:layout_marginBottom="6dp"
+       android:text="@android:string/ok"
+       android:onClick="clickOK" />
+   
+</LinearLayout>
